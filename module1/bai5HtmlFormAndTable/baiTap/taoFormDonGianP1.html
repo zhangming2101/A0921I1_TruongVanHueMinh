@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        h3{
+            background-color: orange;
+            color: white;
+        }
+        label{
+            color: blue;
+        }
+        span{
+            color: orange;
+        }
+        table{
+            background: white;
+        }
+    </style>
+</head>
+<body style="background: #d5feff">
+<form class="container">
+    <table align="center">
+        <tr>
+            <td colspan="4" align="center"><h3>SỞ THÍCH CỦA BẠN</h3></td>
+        </tr>
+        <tr>
+            <td><label>Họ và tên</label></td>
+            <td><input type="text" name="yourname" size="15"></td>
+        </tr>
+        <tr>
+            <td><label>Email</label></td>
+            <td><input type="text" name="email" size="10"></td>
+        </tr>
+        <tr>
+            <td rowspan="4"><label>Sở thích</label></td>
+            <td><input type="checkbox" name="hobby"><span>Thể thao</span></td>
+            <td><input type="checkbox" name="hobby"><span>Âm nhạc</span></td>
+            <td><input type="checkbox" name="hobby"><span>Đọc sách</span></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="hobby"><span>Lướt web</span></td>
+            <td><input type="checkbox" name="hobby"><span>Chơi game</span></td>
+            <td><input type="checkbox" name="hobby"><span>Điện ảnh</span></td>
+
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="hobby"><span>Du lịch</span></td>
+        </tr>
+        <tr>
+            <td >
+                <input type="button" name="submitform" value="Gửi thông tin">
+                <input type="button" name="resetform" value="Nhập lại">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
