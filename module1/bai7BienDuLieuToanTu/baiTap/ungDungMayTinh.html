@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Caculator</h2>
+<form action="">
+    <input type="number" id="txtNumber1">
+    <input type="number" id="txtNumber2">
+    <br>
+    <input type="button" id="btnAddition" value="Addition(+)">
+    <input type="button" id="btnSubtraction" value="Subtraction(-)">
+    <input type="button" id="btnMultiplication" value="Multiplication(X)">
+    <input type="button" id="btnDivision" value="Division(/)">
+    <br>
+    <label>Result: </label> <label id="result"></label>
+</form>
+<script>
+    document.getElementById("btnAddition").addEventListener("click", Addition);
+    document.getElementById("btnSubtraction").addEventListener("click", Subtraction);
+    document.getElementById("btnMultiplication").addEventListener("click", Multiplication);
+    document.getElementById("btnDivision").addEventListener("click", Division);
+    let A = document.getElementById("txtNumber1");
+    let B = document.getElementById("txtNumber2");
+
+    function Addition() {
+
+        let AdditonAB = parseFloat(A.value) + parseFloat(B.value);
+        document.getElementById("result").innerHTML = AdditonAB;
+    }
+
+    function Subtraction() {
+        let SubtractionAB = parseFloat(A.value) - parseFloat(B.value);
+        document.getElementById("result").innerHTML = SubtractionAB;
+    }
+
+    function Multiplication() {
+        let MultiplicationAB = parseFloat(A.value) * parseFloat(B.value);
+        document.getElementById("result").innerHTML = MultiplicationAB;
+    }
+
+    function Division() {
+        let DivisionAB = parseFloat(A.value) / parseFloat(B.value);
+        document.getElementById("result").innerHTML = DivisionAB;
+
+    }
+
+</script>
+</body>
+</html>
